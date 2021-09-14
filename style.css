@@ -1,0 +1,382 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* html {
+    font-family: cursive;
+    font-size: 14px;
+} */
+
+nav>ul>li {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav>ul>li a {
+    padding: 20px 40px;
+}
+
+nav>ul>li a:hover {
+    background-color: rgba(0, 0, 0, 1);
+    border: white solid 1px;
+    cursor: pointer;
+    transition: 500ms;
+
+}
+
+nav>ul>li img {
+    height: 18px;
+    width: 18px;
+}
+
+header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    z-index: 10;
+    color: white;
+    align-items: center;
+    height: 70px;
+}
+
+header span {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 50px;
+}
+
+#first {
+    background: url('background1.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#first>div {
+    text-align: center;
+    width: 90%;
+    font-size: 1rem;
+}
+
+#first>div>span {
+    font-weight: bold;
+}
+
+#first>div>p {
+    padding: 10px 100px;
+}
+
+#first>div>h1 {
+    font-size: 3rem;
+}
+
+#first button {
+    padding: 10px 20px;
+    margin: 50px 10px;
+
+}
+
+#seebutton {
+    background: rgb(70, 207, 70);
+    color: white;
+    border: none;
+}
+
+#joinbutton {
+    background: rgb(55, 55, 226);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+
+}
+
+#second {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    height: minmax(100px, auto);
+    width: 90%;
+    /* margin: auto; */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#second>div {
+    border-bottom: rgb(204, 204, 204) 2px solid;
+}
+
+#posters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.postelement {
+    display: flex;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 220px;
+    width: 300px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.postimg {
+    height: 70%;
+    width: 100%;
+}
+
+.postprofile {
+    height: 30%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.postprofile>img {
+    height: 100%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.postimg>img {
+    height: 100%;
+    width: 100%;
+}
+
+.postprofile>div {
+    padding-left: 1rem;
+    line-height: 1.5rem;
+}
+
+.postprofile span {
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+.postprofile>div>div {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.scale:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    /* z-index: 10; */
+}
+
+.thoughtelement {
+    display: flex;
+    flex-shrink: 1;
+    /* flex-grow: 1; */
+    height: 125px;
+    width: 330px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 5px;
+    align-items: center;
+
+}
+
+#thoughts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.thoughtelement>img {
+    display: inline-block;
+    width: 7rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.thoughtelement>aside>p {
+    color: gray;
+    font-size: 0.9rem;
+    padding-bottom: 0.6rem;
+}
+
+.thoughtelement>aside {
+    padding-left: 1rem;
+}
+
+.thoughtelement>aside>span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#imgWrapper {
+    padding: 10px;
+    display: flex;
+    flex-shrink: 1;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgWrapper>img {
+    height: 50%;
+    width: 17%;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+#imgWrapper>img:nth-child(2) {
+    width: 12%;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+#imgWrapper>img:last-child {
+    flex-grow: 3;
+    height: 30%;
+    flex-shrink: 1;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 20%;
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>nav>section {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+footer ul {
+    padding-top: 10px;
+    list-style-type: none;
+    font-size: 0.8rem;
+    color: rgb(167, 167, 167);
+    font-weight: 400;
+}
+
+footer li {
+    line-height: 1.2rem;
+}
+
+footer>aside img {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.5rem;
+}
+
+footer>aside {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+footer>aside p {
+    text-align: end;
+}
+
+#signup,
+#login {
+    background: url("background2.jpg") no-repeat center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    z-index: -2;
+}
+
+#signup>main,
+#login>main {
+    height: 100%;
+    width: 100%;
+}
+
+#signup>footer,
+#login>footer {
+    /* position: fixed; */
+    bottom: 0;
+    min-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:950px) {
+
+
+    #imgWrapper>img:last-child {
+        flex-grow: 3;
+        height: 18%;
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (max-width:750px) {
+    html {
+        font-size: 14px;
+    }
+
+    #imgWrapper>img {
+        height: 30%;
+        width: 17%;
+        flex-grow: 2;
+        flex-shrink: 2;
+    }
+
+    #imgWrapper>img:last-child {
+        flex-grow: 3;
+        height: 10%;
+        flex-shrink: 1;
+    }
+
+    nav>ul>li a {
+        padding: 20px;
+    }
+}
